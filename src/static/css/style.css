@@ -1,0 +1,52 @@
+.modal-title{
+    margin-bottom: 0;
+    line-height: 1.5;
+    background-color: green;
+    color: yellow;
+}
+.modal-header{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-right-radius: calc(.3rem -1px);
+    border-top-right-radius: calc(.3rem -1px);
+    background-color: green;
+}
+
+.modal-body{
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    background-color: rgb(209, 200, 85);
+}
+.modal-dialog .modal-content{
+    border:0;
+    border-radius: .125rem;
+    background-color:rgb(209, 252, 93);
+    -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0/ 18%), 0 4px 15px 0 rgb(0 0 0/ 15%);
+    box-shadow: 0 5px 11px 0 rgb(0 0 0/ 18%), 0 4px 15px 0 rgb(0 0 0/ 15%);
+}
+
+.card{
+    background-color:(198, 252, 198);
+}
+.card-header{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: green;
+    border-bottom: 1px solid rgba(0,0,0, .125);
+    color: yellow;
+}
+
+.md.firm.label{
+    font-size: 1rem;
+    color: black;
+    font-weight:5rem;
+}
+

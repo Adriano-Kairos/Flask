@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<selection id="edit-product">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-12">
+                <div id=”content-edit-product” class=”justify-content-center align-self-center mx-auto my-5”>
+                    <div class=”card”>
+                        <div class="card-header text-center">
+                            Editarr Produtos
+                        </div>
+                        <div class=”card-body”>
+                            <div action=”/update/product/{{product.0}}” method=”POST” class=”px5”>
+                                    <div class=”md-form row”>
+                                        <div class="col">
+                                            <input type=”number” name=”code” value="{{product.0}}" class=”form-control” id=”codeInput” required autofocus></input>
+                                            <label for=”codeInput”>Produto ID</label>
+                                        </div>
+                                        <div class=”col”>
+                                            <input type=”text” name=”name” value="{{product.1}}"  class=”form-control” id=”codeInput” required autofocus></input>
+                                            <label for=”nameInput”>Nome Produto</label>
+                                        </div>
+                                    </div>
+                                    <div class=”md-form row”>
+                                        <div class="col"></div>
+                                            <input type=”number” name=”stock” value="{{product.2}}" class=”form-control” id=”stockInput” required autofocus></input>
+                                            <label for=”stockInput”>Produto Estoque</label>
+                                        </div>
+                                    <div class=”md-form row”>
+                                        <div class=”col”>
+                                            <input type=”text” name=”value” value="{{product.3}}" class=”form-control” id=”valueInput” required autofocus></input>
+                                            <label for=”nameInput”>Valor</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="md-from">
+                                        <button class="btn btn-success btn-block"></button>
+                                            Editar Produto <i class="fas fa-pen"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</selection>
+{% endblock %}
